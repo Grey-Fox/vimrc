@@ -1,0 +1,52 @@
+# Wombat : Dark gray color scheme sharing some similarities with Desert
+[submodule "pack/plugins/start/wombat256.vim"]
+	path = pack/plugins/start/wombat256.vim
+	url = https://github.com/vim-scripts/wombat256.vim
+
+# Highlight several words in different colors simultaneously
+[submodule "pack/plugins/start/vim-ingo-library"]
+	path = pack/plugins/start/vim-ingo-library
+	url = https://github.com/inkarkat/vim-ingo-library
+[submodule "pack/plugins/start/vim-mark"]
+	path = pack/plugins/start/vim-mark
+	url = https://github.com/inkarkat/vim-mark
+
+# A Git wrapper so awesome, it should be illegal
+[submodule "pack/plugins/start/vim-fugitive"]
+	path = pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+
+# A tree explorer plugin for vim
+[submodule "pack/plugins/start/nerdtree"]
+	path = pack/plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+
+# Vim plugin for intensely orgasmic commenting
+[submodule "pack/plugins/start/nerdcommenter"]
+	path = pack/plugins/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+
+# quoting/parenthesizing made simple
+[submodule "pack/plugins/start/vim-surround"]
+	path = pack/plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+
+# Fuzzy file, buffer, mru, tag, etc finder
+[submodule "pack/plugins/start/ctrlp.vim"]
+	path = pack/plugins/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+
+# Vim plugin for the CLI script 'ack
+[submodule "pack/plugins/start/ack.vim"]
+	path = pack/plugins/start/ack.vim
+	url = https://github.com/mileszs/ack.vim
+
+# Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
+[submodule "pack/plugins/start/python-mode"]
+	path = pack/plugins/start/python-mode
+	url = https://github.com/python-mode/python-mode
+
+# Go development plugin for Vim
+[submodule "pack/plugins/start/vim-go"]
+	path = pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go
