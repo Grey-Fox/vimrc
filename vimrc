@@ -165,21 +165,23 @@ let g:ctrlp_prompt_mappings = {
   \ }
 let g:ctrlp_cmd = 'CtrlPMixed'
 
-" pymode settings
-let g:pymode = 1
-let g:pymode_rope = 1
-let g:pymode_rope_goto_definition_cmd = 'e'
-let g:pymode_rope_complete_on_dot = 0
-let g:pymode_lint_ignore = ['E501', 'C901', 'E265', 'E731']
-let g:pymode_folding=0
-nmap <C-c><C-c>g :tab split<CR><C-c>g
-
 " nerdtree settings
 let NERDTreeIgnore = ['\.pyc$']
 nmap <leader>b :NERDTreeToggle %:p:h<CR>
 
-" vim-go settings
-let g:go_disable_autoinstall = 1
-let g:go_bin_path = $HOME + "/gotools/bin"
-au FileType go nmap <C-c>g <Plug>(go-def)
-au FileType go nmap <C-c><C-c>g :tab split<CR><Plug>(go-def)
+" ALE settings
+let g:ale_linters = {
+\   'python': ['pyls'],
+\   'go': ['gopls', 'gofmt', 'golint', 'govet'],
+\}
+
+let b:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'go': ['gofmt', 'goimports'],
+\}
+
+let g:ale_fix_on_save = 1
+let g:ale_open_list = 'on_save'
+
+nmap <C-c>g :ALEGoToDefinition<CR>
+nmap <C-c><C-c>g :ALEGoToDefinitionInTab<CR>

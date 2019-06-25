@@ -41,12 +41,7 @@
 	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim
 
-# Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
-[submodule "pack/plugins/start/python-mode"]
-	path = pack/plugins/start/python-mode
-	url = https://github.com/python-mode/python-mode
-
-# Go development plugin for Vim
-[submodule "pack/plugins/start/vim-go"]
-	path = pack/plugins/start/vim-go
-	url = https://github.com/fatih/vim-go
+# Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
+[submodule "pack/plugins/start/ale"]
+	path = pack/plugins/start/ale
+	url = https://github.com/w0rp/ale
