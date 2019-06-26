@@ -183,5 +183,15 @@ let b:ale_fixers = {
 let g:ale_fix_on_save = 1
 let g:ale_open_list = 'on_save'
 
+let g:ale_python_pyls_config = {
+\   'pyls': {
+\     'plugins': {
+\       'pylint': {
+\         'enabled': 0
+\       }
+\     }
+\   },
+\}
+
 nmap <C-c>g :ALEGoToDefinition<CR>
 nmap <C-c><C-c>g :ALEGoToDefinitionInTab<CR>
