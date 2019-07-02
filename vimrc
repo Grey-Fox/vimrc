@@ -126,9 +126,8 @@ color wombat256mod
 set colorcolumn=80
 highlight ColorColumn ctermbg=8
 
-" Highlight more than 110 characters
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%111v.\+/
+" change spellcheck highlight
+hi SpellLocal ctermfg=black guifg=black
 
 " highlight trailing spaces
 au BufNewFile,BufRead * let b:mtrailingws=matchadd('ErrorMsg', '\s\+$', -1)
@@ -177,7 +176,6 @@ let g:ale_linters = {
 
 let b:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'go': ['gofmt', 'goimports'],
 \}
 
 let g:ale_fix_on_save = 1

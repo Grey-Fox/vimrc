@@ -45,3 +45,8 @@
 [submodule "pack/plugins/start/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/w0rp/ale
+
+# Go development plugin for Vim
+[submodule "pack/plugins/start/vim-go"]
+	path = pack/plugins/start/vim-go
+    url = https://github.com/fatih/vim-go.git
