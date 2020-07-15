@@ -190,7 +190,7 @@ let g:ale_linters = {
 \   'go': ['gopls', 'gofmt', 'golint', 'govet'],
 \}
 
-let b:ale_fixers = {
+let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
 
