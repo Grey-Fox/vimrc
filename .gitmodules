@@ -50,3 +50,8 @@
 [submodule "pack/plugins/start/vim-go"]
 	path = pack/plugins/start/vim-go
     url = https://github.com/fatih/vim-go.git
+
+# A nicer Python indentation style for vim.
+[submodule "pack/plugins/start/vim-python-pep8-indent"]
+	path = pack/plugins/start/vim-python-pep8-indent
+	url = https://github.com/Vimjas/vim-python-pep8-indent
