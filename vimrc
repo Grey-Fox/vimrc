@@ -95,6 +95,12 @@ set pastetoggle=<F2>
 " *after* we have already opened it. Super useful.
 cnoremap w!! w !sudo tee % >/dev/null
 
+"
+augroup XML
+    autocmd!
+    autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
+augroup END
+
 
 " Searching "
 """""""""""""
