@@ -123,6 +123,9 @@ set incsearch
 set spell spelllang=ru_yo,en_us
 map <leader>ss :setlocal spell!<cr>
 
+" ignore spell checking in single quote
+syntax match quotesingleblock /'[^']\+'/ contains=@NoSpell
+
 
 " Colors "
 """"""""""
