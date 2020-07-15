@@ -31,6 +31,9 @@ filetype indent on
 " Turn on the Wild menu
 set wildmenu
 
+" Completion mode like bash
+set wildmode=longest,list,full
+
 " Set 3 lines to the cursor - when moving vertically using j/k
 set scrolloff=3
 
