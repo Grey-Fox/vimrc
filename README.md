@@ -6,6 +6,6 @@ My vim configuration and [plugins](.gitmodules).
 
 ```
 git clone --recurse-submodules https://github.com/Grey-Fox/vimrc ~/.vim
-GOPATH=~/gotools vim -c GoInstallBinaries -c q
+vim -c GoInstallBinaries -c q
 (required golint, gopls, pyls)
 ```
