@@ -189,11 +189,13 @@ nmap <leader>b :NERDTreeToggle %:p:h<CR>
 let g:ale_linters = {
 \   'python': ['pyls'],
 \   'go': ['gopls', 'gofmt', 'golint', 'govet'],
+\   'rust': ['analyzer', 'cargo', 'rls', 'rustc'],
 \}
 
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'python': ['black'],
+\   'rust': ['rustfmt'],
 \}
 
 let g:ale_fix_on_save = 1
