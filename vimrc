@@ -189,7 +189,7 @@ nmap <leader>b :NERDTreeToggle %:p:h<CR>
 let g:ale_linters = {
 \   'python': ['pyls'],
 \   'go': ['gopls', 'gofmt', 'golint', 'govet'],
-\   'rust': ['analyzer', 'cargo', 'rls', 'rustc'],
+\   'rust': ['analyzer', 'rls'],
 \}
 
 let g:ale_fixers = {
@@ -212,4 +212,4 @@ let g:ale_python_pyls_config = {
 \}
 
 nmap <C-c>g :ALEGoToDefinition<CR>
-nmap <C-c><C-c>g :ALEGoToDefinitionInTab<CR>
+nmap <C-c><C-c>g :tab split<CR>:ALEGoToDefinition<CR>
