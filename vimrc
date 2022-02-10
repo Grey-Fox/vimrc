@@ -189,7 +189,7 @@ nmap <leader>b :NERDTreeToggle %:p:h<CR>
 let g:ale_linters = {
 \   'python': ['pyls'],
 \   'go': ['gopls', 'gofmt', 'golint', 'govet'],
-\   'rust': ['analyzer', 'rls'],
+\   'rust': ['rls'],
 \}
 
 let g:ale_fixers = {
@@ -210,6 +210,10 @@ let g:ale_python_pyls_config = {
 \     }
 \   },
 \}
+
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+packadd ale
 
 nmap <C-c>g :ALEGoToDefinition<CR>
 nmap <C-c><C-c>g :tab split<CR>:ALEGoToDefinition<CR>

@@ -43,7 +43,7 @@
 
 # Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
 [submodule "pack/plugins/start/ale"]
-	path = pack/plugins/start/ale
+	path = pack/plugins/opt/ale
 	url = https://github.com/w0rp/ale
 
 # Go development plugin for Vim
