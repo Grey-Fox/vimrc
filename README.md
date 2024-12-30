@@ -1,11 +1,9 @@
 # vimrc
 
-My vim configuration and [plugins](.gitmodules).
+My NeoVim configuration
 
 # Install
 
 ```
-git clone --recurse-submodules https://github.com/Grey-Fox/vimrc ~/.vim
-vim -c GoInstallBinaries -c q
-(required golint, gopls, pyls)
+git clone https://github.com/Grey-Fox/vimrc ~/.config/nvim
 ```
