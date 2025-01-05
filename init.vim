@@ -13,6 +13,11 @@ call plug#begin()
 " Wombat : Dark gray color scheme sharing some similarities with Desert
 Plug 'vim-scripts/wombat256.vim'
 
+if has('nvim')
+    " One dark and light colorscheme for neovim 
+    Plug 'navarasu/onedark.nvim'
+endif
+
 " Dark color scheme for Vim and vim-airline, inspired by Dark+ in Visual Studio Code
 Plug 'tomasiser/vim-code-dark'
 
@@ -233,6 +238,8 @@ syntax enable
 set t_Co=256
 
 color wombat256mod
+" let g:onedark_config = {'style': 'warmer'}
+" colorscheme onedark
 
 " Highlight 80 column
 set colorcolumn=80
