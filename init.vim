@@ -64,6 +64,8 @@ if has("nvim")
     Plug 'saadparwaiz1/cmp_luasnip'
     " Snippet Engine for Neovim written in Lua. 
     Plug 'L3MON4D3/LuaSnip'
+
+    Plug 'TabbyML/vim-tabby'
 endif
 
 Plug 'puremourning/vimspector'
@@ -318,3 +320,4 @@ nmap <Leader>dj <Plug>VimspectorStepOver
 
 " lsp
 lua require('lsp_setup')
+let g:tabby_inline_completion_keybinding_accept = '<C-l>'
