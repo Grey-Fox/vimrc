@@ -302,7 +302,8 @@ endfunction
 autocmd BufEnter * silent! call SyncTree()
 " ==============================================================================
 
-"vimspector
+" vimspector
+" https://github.com/puremourning/vimspector/blob/master/support/custom_ui_vimrc"
 nnoremap <Leader>dd :call vimspector#Launch()<CR>
 nnoremap <Leader>dr :call vimspector#Reset()<CR>
 nnoremap <Leader>dt :call vimspector#Reset()<CR>
@@ -316,8 +317,8 @@ nmap <Leader>dh <Plug>VimspectorStepOut
 nmap <Leader>dl <Plug>VimspectorStepInto
 nmap <Leader>dj <Plug>VimspectorStepOver
 
-" https://github.com/puremourning/vimspector/blob/master/support/custom_ui_vimrc"
-
-" lsp
-lua require('lsp_setup')
-let g:tabby_inline_completion_keybinding_accept = '<C-l>'
+if has('nvim')
+    " lsp
+    lua require('lsp_setup')
+    let g:tabby_inline_completion_keybinding_accept = '<C-l>'
+endif
