@@ -93,6 +93,14 @@ vim.keymap.set('n', '<C-c><C-c>g', function()
     vim.lsp.buf.definition()
 end, {noremap = true})
 
+vim.api.nvim_create_user_command(
+    "OR",
+    function()
+        vim.lsp.buf.code_action { context = { only = { "source.organizeImports" } }, apply = true }
+    end,
+    {}
+)
+
 -- https://cs.opensource.google/go/x/tools/+/refs/tags/gopls/v0.17.1:gopls/doc/vim.md#neovim-imports
 autocmd("BufWritePre", {
     pattern = "*.go",
