@@ -65,6 +65,9 @@ if has("nvim")
     " Snippet Engine for Neovim written in Lua. 
     Plug 'L3MON4D3/LuaSnip'
 
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-omni'
+
     Plug 'TabbyML/vim-tabby'
 endif
 
@@ -186,9 +189,6 @@ set complete+=.
 set complete+=b
 set complete+=t
 set completeopt=menu
-
-" Autocomplete on Tab
-" inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 
 " This allows for change paste motion cp{motion}
 nmap <silent> cp :set opfunc=ChangePaste<CR>g@
